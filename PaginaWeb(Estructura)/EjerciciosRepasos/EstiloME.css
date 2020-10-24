@@ -1,0 +1,23 @@
+h1 {
+    border-bottom: 2px solid #2175bc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+} 
+nav li{
+    display:inline-block;
+    width:10%;
+    padding:5px 10px;
+    background-color:#2175bc;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+}
+nav li:hover{
+    background-color:#fff;
+    color:#000;
+}

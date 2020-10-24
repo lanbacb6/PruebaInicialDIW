@@ -1,0 +1,98 @@
+#menu{
+	background-color: #2175bc;
+
+}
+
+#menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul li{
+	display: inline-block;
+}
+
+#menu ul li a{
+	color: white;
+	display: block;
+	padding: 20px 20px;
+	text-decoration: none;
+}
+
+#menu ul li a:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.item-r{
+	float: right;
+}
+
+h1 {
+    
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	color: #2175bc;
+	font-size: xx-large;
+
+  }
+
+footer {
+	border-top: #2175bc 3px solid;
+	position: absolute;
+	bottom: 0;
+	width: 99%;
+	height: 40px;
+	color: white;
+	
+ }
+
+ #caja1  { 
+	width: 80%; 
+	height: 50%;	
+	text-align: justify;
+	padding: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-large;
+}
+
+table#mitabla {border-collapse: collapse;
+
+}
+td.bajo {background-color: #ff455e;
+
+}
+
+td.a {background-color: #2175bc;
+
+}
+td.b {background-color: #2175bc;
+
+}
+td.c {background-color: #2175bc;
+
+}
+
+
+thead.cabecera tr td {
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px;
+
+}
+
+tbody.cuerpo tr td {
+    color: #ebebeb;
+    padding: 10px;
+
+}
+
+td {
+	border-style: solid;
+    border-color: #cccccc;
+ 	border-width: 1px;
+}
+
+
