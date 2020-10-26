@@ -1,0 +1,17 @@
+h1 {
+    border-bottom: 2px solid #00F;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  h2 {
+    border: 2px solid #AAA;
+  }
+  
+  #datos {
+    border-top: 4px dotted #F00;
+    border-bottom: 4px dotted #F00;
+  }
+  
+  #contenido {
+    border: 2px dashed #0F0;
+  }
