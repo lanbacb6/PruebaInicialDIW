@@ -1,0 +1,25 @@
+h1{
+    border-bottom: 2px solid #2175bc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#recuadro1{
+    -ms-transform: translate(25px,10px);
+    -webkit-transform: translate(25px,10px);
+    -moz-transform: translate(25px,10px);
+    -o-transform: translate(25px,10px);
+    transform: translate(25px,10px);  
+    border-radius: 20px;  
+    background-color:#ddd;
+    width:200px;
+    padding:10px;
+}
+  
+  
+#recuadro2{
+    border-radius: 20px;  
+    background-color:#aa0;
+    width:200px;
+    padding:10px;
+    margin-top:50px;
+}
