@@ -1,0 +1,55 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:unset;
+    align-content:flex-start;
+    height:100vh; /*Este valor lo puedes omitir si la altura de tu componente esta definida*/
+  }
+  
+.menu{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+    background-color: #2175BC;
+}
+        
+.cuerpo{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+}
+        
+.pie{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+    background-color: #2175BC;
+}
+
+#animacion_imagen {
+    animation: rotate 3s infinite;
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes rotate {
+    0%, 100% {
+    transform: rotate(10deg);
+}
+50% {
+transform: rotate(-10deg);
+}
+}

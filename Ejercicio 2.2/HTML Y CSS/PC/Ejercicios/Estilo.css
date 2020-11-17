@@ -1,0 +1,58 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr 1.8fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "menu menu menu menu"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "piepagina piepagina piepagina piepagina";
+}
+
+.menu { 
+  grid-area: menu;
+  background-color: #2175BC;
+  color: white;
+}
+
+.cuerpo {
+   grid-area: cuerpo; 
+
+}
+.piepagina { 
+  grid-area: piepagina;
+  margin-top: 70px;
+  padding: 27px;
+  background-color: #2175BC; 
+  
+
+}
+
+nav a{
+  text-decoration:none;
+  color:inherit;
+  font-size:14px;
+} 
+nav li{
+  display:inline-block;
+  width:10%;    
+  padding:5px 10px;
+  margin: 0.2%;
+  background-color:#2175bc;
+  border:1px solid #000;
+  text-align:center;
+  color:#fff;
+}
+nav li:hover{
+  background-color:#fff;
+  color:#000;
+}
+
+
+
+
+
+
+
+

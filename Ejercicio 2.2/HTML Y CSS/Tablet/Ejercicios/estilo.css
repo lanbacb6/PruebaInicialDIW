@@ -1,0 +1,58 @@
+
+
+.container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:unset;
+    align-content:flex-start;
+    height:100vh; /*Este valor lo puedes omitir si la altura de tu componente esta definida*/
+  }
+  
+.menu{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+    background-color: #2175BC;
+}
+        
+.cuerpo{
+    order:0;
+    flex:9 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+}
+        
+.pie{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+    background-color: #2175BC;
+}
+
+nav a{
+    text-decoration:none;
+    color:inherit;
+    font-size:14px;
+} 
+nav li{
+    display:inline-block;
+    width:10%;    
+    padding:5px 10px;
+    margin: 0.2%;
+    background-color:#2175bc;
+    border:1px solid #000;
+    text-align:center;
+    color:#fff;
+}
+nav li:hover{
+    background-color:#fff;
+    color:#000;
+}
+        

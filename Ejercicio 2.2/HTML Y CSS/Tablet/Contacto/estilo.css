@@ -1,0 +1,147 @@
+.container{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    align-items:unset;
+    align-content:flex-start;
+    height:100vh; /*Este valor lo puedes omitir si la altura de tu componente esta definida*/
+  }
+  
+.menu{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+    background-color: #2175BC;
+}
+        
+.cuerpo{
+    order:0;
+    flex:0 0 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+}
+        
+.pie{
+    order:0;
+    flex:0 1 auto;
+    align-self:auto;
+    height:auto;
+    width:auto;
+    background-color: #2175BC;
+}
+
+#contenedor {
+    background: #FFF;
+    margin: 1em auto;
+    padding: 1em;
+    width: 768px;
+  }
+  
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    border-top: 1px solid #CCC;
+    margin: 1em 0;
+    padding: 1em;
+    width: auto;
+    overflow: hidden;
+  }
+  
+  
+  ul li label.titulo {
+    float: left;
+    width: 150px;
+    text-align: right;  
+  }
+   
+  ul li div.controles {
+    margin-left: 160px;
+  }
+  
+  
+  ul li.botones {
+    border-top: 2px solid #CCC;
+    clear: both;
+    float: none;
+    padding: 1em 0;
+    text-align: right;
+    width: 100%;
+  }
+   
+  ul li.botones input {
+    font-size: 18px;
+  }
+  
+  
+  ul li label.titulo {
+    font-weight: bold;
+  }
+   
+  ul li div span {
+    float: left;
+    padding: 0.3em 0;
+  }
+   
+  ul li div span.completo {
+    width: 100%;
+  }
+   
+  ul li div span.mitad {
+    width: 50%;
+  }
+   
+  ul li div span.tercio {
+    width: 33%;
+  }
+   
+  ul li div span.dostercios {
+    width: 66%;
+  }
+  
+  ul li div span label {
+    display: block;
+    font-size: 12px;
+    color: #333;
+  }
+  
+  ul li input {
+    padding: 0.2em;
+  }
+   
+  input#apellidos,  input#email, input#nombre {
+    width: 260px;
+  }
+   
+  
+  
+  ul li:hover {
+    background-color: #FF9;
+  }
+   
+  ul li.botones:hover {
+    background-color: transparent;
+  }
+  
+  
+  ul li input, ul li select {
+    border: 2px solid transparent;
+    border-bottom: 2px solid black;
+  }
+  
+  ul li.botones input {
+    border: 2px solid #CCC;
+  }
+  
+  ul li input:focus, ul li select:focus {
+    border: 2px solid #F00;
+  }
+  

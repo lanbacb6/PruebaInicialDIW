@@ -1,0 +1,145 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr 1.8fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "menu menu menu menu"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "piepagina piepagina piepagina piepagina";
+}
+
+.menu { 
+  grid-area: menu;
+  background-color: #2175BC;
+  color: white;
+}
+
+.cuerpo {
+   grid-area: cuerpo; 
+
+}
+.piepagina { 
+  grid-area: piepagina;
+  margin-top: 70px;
+  padding: 27px;
+  background-color: #2175BC; 
+  
+
+}
+
+#contenedor {
+  background: #FFF;
+  margin: 1em auto;
+  padding: 1em;
+  width: 768px;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  border-top: 1px solid #CCC;
+  margin: 1em 0;
+  padding: 1em;
+  width: auto;
+  overflow: hidden;
+}
+
+
+ul li label.titulo {
+  float: left;
+  width: 150px;
+  text-align: right;  
+}
+ 
+ul li div.controles {
+  margin-left: 160px;
+}
+
+
+ul li.botones {
+  border-top: 2px solid #CCC;
+  clear: both;
+  float: none;
+  padding: 1em 0;
+  text-align: right;
+  width: 100%;
+}
+ 
+ul li.botones input {
+  font-size: 18px;
+}
+
+
+ul li label.titulo {
+  font-weight: bold;
+}
+ 
+ul li div span {
+  float: left;
+  padding: 0.3em 0;
+}
+ 
+ul li div span.completo {
+  width: 100%;
+}
+ 
+ul li div span.mitad {
+  width: 50%;
+}
+ 
+ul li div span.tercio {
+  width: 33%;
+}
+ 
+ul li div span.dostercios {
+  width: 66%;
+}
+
+ul li div span label {
+  display: block;
+  font-size: 12px;
+  color: #333;
+}
+
+ul li input {
+  padding: 0.2em;
+}
+ 
+input#apellidos,  input#email, input#nombre {
+  width: 260px;
+}
+ 
+
+
+ul li:hover {
+  background-color: #FF9;
+}
+ 
+ul li.botones:hover {
+  background-color: transparent;
+}
+
+
+ul li input, ul li select {
+  border: 2px solid transparent;
+  border-bottom: 2px solid black;
+}
+
+ul li.botones input {
+  border: 2px solid #CCC;
+}
+
+ul li input:focus, ul li select:focus {
+  border: 2px solid #F00;
+}
+
+
+
+

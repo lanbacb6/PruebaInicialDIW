@@ -1,0 +1,56 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr 1.8fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "menu menu menu menu"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "piepagina piepagina piepagina piepagina";
+}
+
+.menu { 
+  grid-area: menu;
+  background-color: #2175BC;
+  color: white;
+}
+
+.cuerpo {
+   grid-area: cuerpo; 
+
+}
+.piepagina { 
+  grid-area: piepagina;
+  margin-top: 70px;
+  padding: 27px;
+  background-color: #2175BC; 
+  
+
+}
+
+
+#animacion_imagen {
+  animation: rotate 3s infinite;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  }
+  @keyframes rotate {
+  0%, 100% {
+  transform: rotate(10deg);
+  }
+  50% {
+  transform: rotate(-10deg);
+  }
+  }
+
+
+
+
+
