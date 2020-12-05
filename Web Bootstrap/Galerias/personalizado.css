@@ -1,0 +1,32 @@
+.container{
+    background: whitesmoke;
+}
+
+.seccion{
+    background-color:  #d07ea7; 
+    font-size: 35px;  
+    text-align: center;
+    color: white;  
+}
+
+.menu{
+    background-color: #d07ea7; 
+    width: 100%;
+    color: white;
+
+}
+
+a{
+    color: white;
+}
+
+.nav{
+    background-color:  #d07ea7;    
+    padding: 10px;
+}
+
+.nav :hover{
+    background-color: white;
+    color: black;    
+}
+

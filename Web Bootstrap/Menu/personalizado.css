@@ -1,0 +1,27 @@
+.container{
+    background: whitesmoke;
+}
+
+.seccion{
+    background-color:  #d07ea7; 
+    font-size: 35px;  
+    text-align: center;
+    color: white;  
+}
+
+a{
+    color: #d07ea7;
+    font-weight: bold;
+}
+
+.btn-link{
+    background-color: whitesmoke; 
+    border: whitesmoke;
+    color: #d07ea7;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;    
+}
+
+
+

@@ -1,0 +1,30 @@
+.container{
+    background: whitesmoke;
+}
+
+.seccion{
+    background-color:  #d07ea7; 
+    font-size: 35px;  
+    text-align: center;
+    color: white;  
+}
+.btn-outline-info{
+    
+    background: #d07ea7;
+    color: white;
+    border: #d07ea7;
+}
+
+.btn-outline-info :hover{
+    color: #d07ea7;
+    background: white;
+    border: #d07ea7;
+}
+
+.h3{
+    color: #d07ea7;
+    font-size: 20px;
+}
+
+
+
