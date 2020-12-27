@@ -1,0 +1,69 @@
+.container {
+  width: 75%;
+  margin: 0px auto; }
+  .container h2 {
+    color: #11A265;
+    font-size: 30px; }
+  .container p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif; }
+
+nav {
+  background-color: #D9001B;
+  color: #FFF000;
+  padding: 0.2rem;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px; }
+  nav ul li {
+    display: inline-block;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    nav ul li.active {
+      color: #FFFFFF;
+      font-weight: bolder; }
+    nav ul li:hover {
+      color: #11A265; }
+    nav ul li a {
+      text-decoration: none; }
+
+.seccion {
+  background-color: #D9001B;
+  width: 80%;
+  padding: 0.5px;
+  margin: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-style: italic; }
+  .seccion h1 {
+    color: #FFF000;
+    text-align: center; }
+
+.columna_izquierda {
+  float: left;
+  text-align: justify;
+  font-size: 20px;
+  margin-right: 10%;
+  border-color: #D9001B;
+  border-style: solid;
+  padding: 10px;
+  margin: 55px;
+  height: 200px;
+  width: 320px; }
+
+.piedepagina {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-top: 60px;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  color: #FFF000;
+  background-color: #D9001B; }
+
+/*# sourceMappingURL=estilos.css.map */
