@@ -11,11 +11,11 @@
 nav {
   background-color: #D9001B;
   color: #FFF000;
-  padding: 0.2rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px; }
+  border-bottom-left-radius: 20px;
+  font-size: 30px; }
   nav ul li {
     display: inline-block;
     padding-left: 1rem;
@@ -23,10 +23,12 @@ nav {
     nav ul li.active {
       color: #FFFFFF;
       font-weight: bolder; }
-    nav ul li:hover {
-      color: #11A265; }
+    nav ul li a:hover {
+      color: #FFFFFF; }
     nav ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #FFF000;
+      padding: 8px; }
 
 .seccion {
   background-color: #D9001B;
@@ -54,6 +56,17 @@ nav {
   height: 200px;
   width: 320px; }
 
+.columna {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 80px;
+  column-gap: 40px;
+  -webkit-column-rule: 1px solid #D9001B;
+  -moz-column-rule: 1px solid #D9001B;
+  column-rule: 1px solid #D9001B; }
+
 .piedepagina {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -62,6 +75,16 @@ nav {
   margin-top: 60px;
   font-size: 20px;
   padding: 5px;
+  text-align: center;
+  color: #FFF000;
+  background-color: #D9001B; }
+
+.cabecera {
+  font-size: 55px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
   text-align: center;
   color: #FFF000;
   background-color: #D9001B; }

@@ -4,6 +4,7 @@ $color-background: #FFFFFF;
 $color-base: #FFF000;
 $color-negro: #000000;
 $color-verde: #11A265;
+$color-rojo: #D9001B;
 
 
 //Colores menu
@@ -35,17 +36,20 @@ $main-container-width: 75%;
 //Estilo menu
 nav{
     background-color: $navbar-background-color;
-    color: $navbar-color;
-    padding:  0.2rem;
+    color: $navbar-color;    
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;   
+    border-bottom-left-radius: 20px; 
+    font-size: 30px;  
+    
+ 
     ul{
         li{
             display: inline-block;
             padding-left: 1rem;
             padding-right: 1rem;
+            
 
             &.active{
                 
@@ -53,14 +57,17 @@ nav{
                 font-weight: bolder;
             }
 
-            &:hover{
-                color: $color-verde;        
+            a:hover{
+                color: $color-background;              
                 
                 
             }
 
             a{
                 text-decoration: none;
+                color: $color-base;                
+                padding: 8px;
+                              
             }
         }
     }
@@ -104,6 +111,18 @@ nav{
    
 }
 
+.columna {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 80px;
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid $color-rojo;
+    -moz-column-rule: 1px solid $color-rojo;
+    column-rule: 1px solid $color-rojo;
+  }
+
 .piedepagina{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -115,6 +134,18 @@ nav{
     text-align: center;
     color: $color-base;
     background-color: $navbar-background-color; 
+}
+
+.cabecera{
+    font-size: 55px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    color: $color-base;
+    background-color: $navbar-background-color; 
+
 }
 
 
