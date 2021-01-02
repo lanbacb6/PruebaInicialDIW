@@ -101,8 +101,7 @@ nav{
    font-size: 20px;
    margin-right: 10%;
    border-color: $border-color-rojo;
-   border-style: solid;
-   padding: 10px;  
+   border-style: solid;   
    margin: 55px;
    height: 200px;
    width: 320px;
@@ -110,6 +109,23 @@ nav{
    
    
 }
+
+.columna_galeria
+{
+   float:left; 
+   text-align: justify;
+   font-size: 20px;
+   margin-right: 1%;
+   border-color: $border-color-rojo;
+   border-style: solid;    
+   margin: 78px;
+   height: 350px;
+   width: 480px;
+   
+   
+   
+}
+
 
 .columna {
     -webkit-column-count: 3;
@@ -138,6 +154,7 @@ nav{
 
 .cabecera{
     font-size: 55px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
