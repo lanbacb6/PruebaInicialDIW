@@ -9,27 +9,84 @@
     font-family: Arial, Helvetica, sans-serif; }
 
 nav {
-  background-color: #D9001B;
-  color: #FFF000;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  font-size: 30px; }
-  nav ul li {
-    display: inline-block;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    nav ul li.active {
-      color: #FFFFFF;
-      font-weight: bolder; }
-    nav ul li a:hover {
-      color: #FFFFFF; }
-    nav ul li a {
-      text-decoration: none;
-      color: #FFF000;
-      padding: 8px; }
+  background: #D9001B;
+  height: 80px;
+  width: 100%; }
 
+label.logo {
+  color: #FFF000;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold; }
+
+nav ul {
+  float: right;
+  margin-right: 20px; }
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px; }
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase; }
+
+a.active, a:hover {
+  background: #FFF000;
+  transition: .5s; }
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; }
+
+#check {
+  display: none; }
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px; }
+
+  nav ul li a {
+    font-size: 16px; } }
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block; }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #D9001B;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s; }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px; }
+
+  nav ul li a {
+    font-size: 20px; }
+
+  a:hover, a.active {
+    background: none;
+    color: #FFF000; }
+
+  #check:checked ~ ul {
+    left: 0; } }
 .seccion {
   background-color: #D9001B;
   width: 80%;
@@ -53,7 +110,8 @@ nav {
   border-style: solid;
   margin: 55px;
   height: 200px;
-  width: 320px; }
+  width: 320px;
+  border-color: #D9001B; }
 
 .columna_galeria {
   float: left;
