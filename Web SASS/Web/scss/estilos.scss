@@ -65,12 +65,13 @@ $main-container-width: 75%;
     text-transform: uppercase;
   }
   a.active,a:hover{
+    color: $color-rojo;
     background: $color-base;
     transition: .5s;
   }
   .checkbtn{
     font-size: 30px;
-    color: white;
+    color: $color-base;
     float: right;
     line-height: 80px;
     margin-right: 40px;

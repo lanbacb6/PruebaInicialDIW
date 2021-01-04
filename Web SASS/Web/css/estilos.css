@@ -37,12 +37,13 @@ nav ul li a {
   text-transform: uppercase; }
 
 a.active, a:hover {
+  color: #D9001B;
   background: #FFF000;
   transition: .5s; }
 
 .checkbtn {
   font-size: 30px;
-  color: white;
+  color: #FFF000;
   float: right;
   line-height: 80px;
   margin-right: 40px;
