@@ -1,41 +1,76 @@
-//colores generales web
+////@access public
+////@author @JMORENO
 
+/// Estilos de colores de la web
+////@group colores
 $color-background: #FFFFFF;
+/// Estilo color base
+////@group colores
 $color-base: #FFF000;
+/// Estilo de color negro
+////@group colores
 $color-negro: #000000;
+/// Estilo de color verde
+////@group colores
 $color-verde: #11A265;
+/// Estilo de color rojo
+////@group colores
 $color-rojo: #D9001B;
 
 
-//Colores menu
+/// Tamaño del H2
+////@group tamaño-letra
+$size-font-h2: 30px;
+/// Tamaño de la etiqueta P
+////@group tamaño-letra
+$size-font-p: 25px;
+/// Estilo de tipo de letra P
+////@group tamaño-letra
+$tipo-letra-p: Arial, Helvetica, sans-serif;
+/// Tamaño del H1
+////@group tamaño-letra
+$size-font-h1: 20px;
+
+
+/// Estilos de colores de la web del menu Amarillo
+////@group colores-Menu
 $navbar-color: #FFF000;
+/// Estilos de colores de la web del menu Rojo
+////@group colores-Menu
 $navbar-background-color: #D9001B;
+/// Estilos de colores de la web del Background
+////@group colores-Menu
 $navbar-color-hover:$color-background;
+/// Estilos de colores de la web del menu.
+////@group colores-Menu
 $border-color-rojo: #D9001B;
 
-//Estilo contenedor
+/// Dimension del Container
+////@group dimensiones
 $main-container-width: 75%;
 
+
+// Estilo contenedor.
 .container {
     width: $main-container-width;
     margin: 0px auto;
 
     h2{
         color: #11A265;
-        font-size: 30px;
+        font-size: $size-font-h2;
     }
 
     p{
-        font-size: 25px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-size: $size-font-p;
+        font-family: $tipo-letra-p;
     }
 
    
 }
 
-//Estilo menu
 
-  
+
+//Estilo del menu
   nav{
     background :$color-rojo;
     height: 80px;
@@ -135,6 +170,7 @@ $main-container-width: 75%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;   
     font-style: italic;
+    font-size: $size-font-h1;
     
 
     h1{
@@ -156,6 +192,7 @@ $main-container-width: 75%;
    height: 200px;
    width: 320px;
 
+  
    $border-verder: false;
    $border-amarillo: false;
 
@@ -166,27 +203,38 @@ $main-container-width: 75%;
    } @else{
        border-color: $color-rojo;
    }
-
-
-   
-   
-   
+ 
 }
 
-.columna_galeria
-{
-   float:left; 
-   text-align: justify;
-   font-size: 20px;
-   margin-right: 1%;
-   border-color: $border-color-rojo;
-   border-style: solid;    
-   margin: 78px;
-   height: 350px;
-   width: 480px;
-   
-   
-   
+/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
 
 

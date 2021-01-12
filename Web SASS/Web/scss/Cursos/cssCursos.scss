@@ -1,0 +1,88 @@
+$color-background: #FFFFFF;
+$color-base: #FFF000;
+$color-negro: #000000;
+$color-verde: #11A265;
+$color-rojo: #D9001B;
+
+$navbar-color: #FFF000;
+$navbar-background-color: #D9001B;
+$navbar-color-hover:$color-background;
+$border-color-rojo: #D9001B;
+
+$size-font-h2: 30px;
+
+$size-font-p: 25px;
+$tipo-letra-p: Arial, Helvetica, sans-serif;
+
+
+$main-container-width: 75%;
+
+.container {
+    width: $main-container-width;
+    margin: 0px auto;
+
+    h2{
+        color: #11A265;
+        font-size: $size-font-h2;
+    }
+
+    p{
+        font-size: $size-font-p;
+        font-family: $tipo-letra-p;
+    }
+
+   
+}
+
+.seccion{
+    background-color: $navbar-background-color;    
+    width: 80%;
+    padding: 0.5px;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;   
+    font-style: italic;
+    
+
+    h1{
+        color: $color-base;
+        text-align: center;        
+    }
+
+}
+
+.piedepagina{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 60px;
+    font-size: 20px;    
+    padding: 5px;
+    text-align: center;
+    color: $color-base;
+    background-color: $navbar-background-color; 
+}
+
+.cabecera{
+    font-size: 55px;
+    width: 100%;  
+    text-align: center;
+    color: $color-base;
+    background-color: $navbar-background-color; 
+
+}
+
+.columna {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 80px;
+    column-gap: 40px;
+    -webkit-column-rule: 1px solid $color-rojo;
+    -moz-column-rule: 1px solid $color-rojo;
+    column-rule: 1px solid $color-rojo;
+  }

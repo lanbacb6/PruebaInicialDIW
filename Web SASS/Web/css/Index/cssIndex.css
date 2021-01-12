@@ -97,7 +97,8 @@ a.active, a:hover {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  font-style: italic; }
+  font-style: italic;
+  font-size: 20px; }
   .seccion h1 {
     color: #FFF000;
     text-align: center; }
@@ -114,16 +115,32 @@ a.active, a:hover {
   width: 320px;
   border-color: #D9001B; }
 
-.columna_galeria {
-  float: left;
-  text-align: justify;
-  font-size: 20px;
-  margin-right: 1%;
-  border-color: #D9001B;
-  border-style: solid;
-  margin: 78px;
-  height: 350px;
-  width: 480px; }
+/* external css: flickity.css */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif; }
+
+.gallery {
+  background: #EEE; }
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell; }
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white; }
 
 .columna {
   -webkit-column-count: 3;
@@ -159,4 +176,4 @@ a.active, a:hover {
   color: #FFF000;
   background-color: #D9001B; }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=cssIndex.css.map */
