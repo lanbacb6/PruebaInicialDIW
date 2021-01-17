@@ -1,21 +1,5 @@
-$color-background: #FFFFFF;
-$color-base: #FFF000;
-$color-negro: #000000;
-$color-verde: #11A265;
-$color-rojo: #D9001B;
-
-$navbar-color: #FFF000;
-$navbar-background-color: #D9001B;
-$navbar-color-hover:$color-background;
-$border-color-rojo: #D9001B;
-
-$size-font-h2: 30px;
-
-$size-font-p: 25px;
-$tipo-letra-p: Arial, Helvetica, sans-serif;
-
-
-$main-container-width: 75%;
+@import "variables";
+/*Estilo de la clase container*/
 
 .container {
     width: $main-container-width;
@@ -33,7 +17,7 @@ $main-container-width: 75%;
 
    
 }
-
+/*Estilo de la clase seccion*/
 .seccion{
     background-color: $navbar-background-color;    
     width: 80%;
@@ -53,6 +37,7 @@ $main-container-width: 75%;
 
 }
 
+/*Estilo de la clase pie de pagina*/
 .piedepagina{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -66,6 +51,8 @@ $main-container-width: 75%;
     background-color: $navbar-background-color; 
 }
 
+/*EStilo de la clase cabecera*/
+
 .cabecera{
     font-size: 55px;
     width: 100%;  
@@ -75,6 +62,7 @@ $main-container-width: 75%;
 
 }
 
+/*EStilo de la clase columna*/
 .columna {
     -webkit-column-count: 3;
     -moz-column-count: 3;

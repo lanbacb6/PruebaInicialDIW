@@ -1,5 +1,6 @@
+/*Estilo de la clase container*/
 .container {
-  width: 75%;
+  width: 70%;
   margin: 0px auto; }
   .container h2 {
     color: #11A265;
@@ -8,6 +9,7 @@
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif; }
 
+/*Estilo del menu*/
 nav {
   background: #D9001B;
   height: 80px;
@@ -53,6 +55,7 @@ a.active, a:hover {
 #check {
   display: none; }
 
+/*Resolucion maxima cuando motrar el logo*/
 @media (max-width: 952px) {
   label.logo {
     font-size: 30px;
@@ -88,6 +91,7 @@ a.active, a:hover {
 
   #check:checked ~ ul {
     left: 0; } }
+/*Estilo de la clase seccion.*/
 .seccion {
   background-color: #D9001B;
   width: 80%;
@@ -100,9 +104,10 @@ a.active, a:hover {
   font-style: italic;
   font-size: 20px; }
   .seccion h1 {
-    color: #FFF000;
+    color: #FFFFFF;
     text-align: center; }
 
+/*Estilo columna comentarios de clientes*/
 .columna_izquierda {
   float: left;
   text-align: justify;
@@ -113,6 +118,8 @@ a.active, a:hover {
   margin: 55px;
   height: 200px;
   width: 320px;
+  padding: 3px;
+  /*Condiciones si la variable border-verder es true su colo se elegira verde, si border-amarillo es true se elegira amarillo y si los dos son falso sera rojo */
   border-color: #D9001B; }
 
 /* external css: flickity.css */
@@ -142,6 +149,7 @@ body {
   font-size: 80px;
   color: white; }
 
+/*Estilo de la clase columna*/
 .columna {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -153,6 +161,7 @@ body {
   -moz-column-rule: 1px solid #D9001B;
   column-rule: 1px solid #D9001B; }
 
+/*Estilo de la clase pie de pagina*/
 .piedepagina {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -165,6 +174,7 @@ body {
   color: #FFF000;
   background-color: #D9001B; }
 
+/*Estilo de la clase cabecera*/
 .cabecera {
   font-size: 55px;
   width: 100%;
@@ -175,5 +185,74 @@ body {
   text-align: center;
   color: #FFF000;
   background-color: #D9001B; }
+
+/*Animacion de noticias*/
+#animacion_imagen {
+  animation: rotate 3s infinite;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(10deg); }
+  50% {
+    transform: rotate(-10deg); } }
+/*Estilo de tabla*/
+table.customTable {
+  width: 100%;
+  background-color: #19ADE4;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #D9001B;
+  border-style: outset;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px; }
+
+table.customTable td, table.customTable th {
+  border-width: 2px;
+  border-color: #FFFFFF;
+  border-style: outset;
+  padding: 5px; }
+
+table.customTable thead {
+  background-color: #D9001B; }
+
+/*Estilo Carusel imagen*/
+.galeria {
+  height: calc( 340px + 1em);
+  width: 85%;
+  margin: 1em auto;
+  position: relative; }
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s; }
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-300px - 1.5em);
+  left: .5em; }
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1; }
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1; }
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1; }
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1; }
 
 /*# sourceMappingURL=cssIndex.css.map */

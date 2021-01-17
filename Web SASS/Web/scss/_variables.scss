@@ -1,0 +1,58 @@
+////@access public
+////@author @JMORENO
+
+/// Estilos de colores de la web
+////@group colores
+$color-background: #FFFFFF;
+/// Estilo color base
+////@group colores
+$color-base: #FFF000;
+/// Estilo de color negro
+////@group colores
+$color-negro: #000000;
+/// Estilo de color verde
+////@group colores
+$color-verde: #11A265;
+/// Estilo de color rojo
+////@group colores
+$color-rojo: #D9001B;
+/// Estilo de color azul
+///@group colores
+$color-azul: #19ADE4;
+
+
+/// Tamaño del H2
+////@group tamaño-letra
+$size-font-h2: 30px;
+/// Tamaño de la etiqueta P
+////@group tamaño-letra
+$size-font-p: 25px;
+/// Estilo de tipo de letra P
+////@group tamaño-letra
+$tipo-letra-p: Arial, Helvetica, sans-serif;
+/// Tamaño del H1
+////@group tamaño-letra
+$size-font-h1: 20px;
+/// Tamaño Tabla letra
+$size-font-table: 20px;
+
+/// Estilos de colores de la web del menu Amarillo
+////@group colores-Menu
+$navbar-color: #FFF000;
+/// Estilos de colores de la web del menu Rojo
+////@group colores-Menu
+$navbar-background-color: #D9001B;
+/// Estilos de colores de la web del Background
+////@group colores-Menu
+$navbar-color-hover:$color-background;
+/// Estilos de colores de la web del menu.
+////@group colores-Menu
+$border-color-rojo: #D9001B;
+
+/// Dimension del Container
+////@group dimensiones
+$main-container-width: 70%;
+
+/// Dimension del galeria
+////@group dimensiones
+$main-container-width-galeria: 150%;

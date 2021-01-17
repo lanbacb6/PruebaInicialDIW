@@ -1,3 +1,4 @@
+/*Estilo de la clase cabecera*/
 .cabecera {
   font-size: 55px;
   width: 100%;
@@ -5,8 +6,9 @@
   color: #FFF000;
   background-color: #D9001B; }
 
+/*EStilo de la clase container*/
 .container {
-  width: 75%;
+  width: 150%;
   margin: 0px auto; }
   .container h2 {
     color: #11A265;
@@ -15,6 +17,7 @@
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif; }
 
+/*Estilo de clase pie de pagina*/
 .piedepagina {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -27,6 +30,7 @@
   color: #FFF000;
   background-color: #D9001B; }
 
+/*Estilo de la calse columna galeria*/
 .columna_galeria {
   float: left;
   text-align: justify;

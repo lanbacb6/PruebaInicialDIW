@@ -1,5 +1,6 @@
+/*Estilo de la clase container*/
 .container {
-  width: 75%;
+  width: 70%;
   margin: 0px auto; }
   .container h2 {
     color: #11A265;
@@ -8,6 +9,7 @@
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif; }
 
+/*Estilo de la clase seccion*/
 .seccion {
   background-color: #D9001B;
   width: 80%;
@@ -22,6 +24,7 @@
     color: #FFF000;
     text-align: center; }
 
+/*Estilo de la clase pie de pagina*/
 .piedepagina {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -34,6 +37,7 @@
   color: #FFF000;
   background-color: #D9001B; }
 
+/*EStilo de la clase cabecera*/
 .cabecera {
   font-size: 55px;
   width: 100%;
@@ -41,6 +45,7 @@
   color: #FFF000;
   background-color: #D9001B; }
 
+/*EStilo de la clase columna*/
 .columna {
   -webkit-column-count: 3;
   -moz-column-count: 3;

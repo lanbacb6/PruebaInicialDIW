@@ -1,56 +1,5 @@
-////@access public
-////@author @JMORENO
-
-/// Estilos de colores de la web
-////@group colores
-$color-background: #FFFFFF;
-/// Estilo color base
-////@group colores
-$color-base: #FFF000;
-/// Estilo de color negro
-////@group colores
-$color-negro: #000000;
-/// Estilo de color verde
-////@group colores
-$color-verde: #11A265;
-/// Estilo de color rojo
-////@group colores
-$color-rojo: #D9001B;
-
-
-/// Tamaño del H2
-////@group tamaño-letra
-$size-font-h2: 30px;
-/// Tamaño de la etiqueta P
-////@group tamaño-letra
-$size-font-p: 25px;
-/// Estilo de tipo de letra P
-////@group tamaño-letra
-$tipo-letra-p: Arial, Helvetica, sans-serif;
-/// Tamaño del H1
-////@group tamaño-letra
-$size-font-h1: 20px;
-
-
-/// Estilos de colores de la web del menu Amarillo
-////@group colores-Menu
-$navbar-color: #FFF000;
-/// Estilos de colores de la web del menu Rojo
-////@group colores-Menu
-$navbar-background-color: #D9001B;
-/// Estilos de colores de la web del Background
-////@group colores-Menu
-$navbar-color-hover:$color-background;
-/// Estilos de colores de la web del menu.
-////@group colores-Menu
-$border-color-rojo: #D9001B;
-
-/// Dimension del Container
-////@group dimensiones
-$main-container-width: 75%;
-
-
-// Estilo contenedor.
+@import "variables";
+/*Estilo de la clase container*/
 .container {
     width: $main-container-width;
     margin: 0px auto;
@@ -70,7 +19,7 @@ $main-container-width: 75%;
 
 
 
-//Estilo del menu
+/*Estilo del menu*/
   nav{
     background :$color-rojo;
     height: 80px;
@@ -116,6 +65,7 @@ $main-container-width: 75%;
   #check{
     display: none;
   }
+  /*Resolucion maxima cuando motrar el logo*/
   @media (max-width: 952px){
     label.logo{
       font-size: 30px;
@@ -158,7 +108,7 @@ $main-container-width: 75%;
   
   
   
-//Estilo de seccion.
+/*Estilo de la clase seccion.*/
 
 .seccion{
     background-color: $navbar-background-color;    
@@ -174,12 +124,12 @@ $main-container-width: 75%;
     
 
     h1{
-        color: $color-base;
+        color: $color-background;
         text-align: center;        
     }
 
 }
-
+/*Estilo columna comentarios de clientes*/
 .columna_izquierda
 {
    float:left; 
@@ -191,8 +141,9 @@ $main-container-width: 75%;
    margin: 55px;
    height: 200px;
    width: 320px;
+   padding: 3px;
 
-  
+ /*Condiciones si la variable border-verder es true su colo se elegira verde, si border-amarillo es true se elegira amarillo y si los dos son falso sera rojo */ 
    $border-verder: false;
    $border-amarillo: false;
 
@@ -237,7 +188,7 @@ body { font-family: sans-serif; }
   color: white;
 }
 
-
+/*Estilo de la clase columna*/
 .columna {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -250,6 +201,7 @@ body { font-family: sans-serif; }
     column-rule: 1px solid $color-rojo;
   }
 
+/*Estilo de la clase pie de pagina*/
 .piedepagina{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -263,6 +215,7 @@ body { font-family: sans-serif; }
     background-color: $navbar-background-color; 
 }
 
+/*Estilo de la clase cabecera*/
 .cabecera{
     font-size: 55px;
     width: 100%;
@@ -276,6 +229,92 @@ body { font-family: sans-serif; }
 
 }
 
+/*Animacion de noticias*/
+
+#animacion_imagen {
+  animation: rotate 3s infinite;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  }
+  @keyframes rotate {
+  0%, 100% {
+  transform: rotate(10deg);
+  }
+  50% {
+  transform: rotate(-10deg);
+  }
+  }
+
+/*Estilo de tabla*/
+
+table.customTable {
+  width: 100%;
+  background-color: $color-azul;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: $color-rojo;
+  border-style: outset;
+  color: $color-background;
+  text-align: center;
+  font-size: $size-font-table;
+}
+
+table.customTable td, table.customTable th {
+  border-width: 2px;
+  border-color: $color-background;
+  border-style: outset;
+  padding: 5px;
+}
+
+table.customTable thead {
+  background-color: $color-rojo;
+}
+
+/*Estilo Carusel imagen*/
+
+.galeria {
+  height: calc( 340px + 1em);
+  width: 85%;  
+  margin:1em auto; 
+  position: relative;
+    
+}
+
+.galeria img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.galeria input[type=radio] {
+  position: relative;
+  bottom: calc(-300px - 1.5em);
+  left: .5em;
+}
+
+.galeria input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+  opacity: 1;
+}
+
+.galeria input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+  opacity: 1;
+}
 
 
 
